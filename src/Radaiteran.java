@@ -15,7 +15,7 @@ public class Radaiteran extends Raza {
     
         ataquesRealizados++;
 
-        return danioBase*ataquesRealizados;
+        return danioBase + (3 * ataquesRealizados);
 
     }
     /*Metodo que dania a la clase, es decir reliza el ataque que recibe el personaje */

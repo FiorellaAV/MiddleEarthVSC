@@ -17,7 +17,7 @@ public class Nortachian extends Raza implements Descanso{
             turnosConBuffo--;
             return 0;
         }else{
-            salud = salud + (salud*4)/100;
+            salud = salud + (saludMaxima*4)/100;
             if(turnosEnojado > 0){
                 turnosEnojado--;
             return danioBase*2;

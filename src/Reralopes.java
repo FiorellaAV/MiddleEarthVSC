@@ -29,7 +29,7 @@ public class Reralopes extends Raza implements Descanso {
     public void bonusDescanso() {
         
         turnosConBuffo +=3;
-        danioConBuffo = danioBase * 3;    
+        danioConBuffo = danioBase * 2;    
 
     }
     /*Metodo que dania a la clase, es decir reliza el ataque que recibe el personaje */
@@ -37,6 +37,10 @@ public class Reralopes extends Raza implements Descanso {
     public void recibirAtaque(Raza enemigo) {
 
         salud = salud - enemigo.atacar();
+
+        if(turnosConBuffo > 0){
+            turnosConBuffo = 0;
+        }
         
         herido = true;
 
